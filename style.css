@@ -13,53 +13,77 @@ body {
 }
 
 /* Header */
+/* Style for header container */
 .header {
-    text-align: center;
-    background-color: #fff;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    background-image: url('pictures/header-image.jpeg');
+  background-color: #fff;
+  padding: 40px 20px;
+  background-image: url('pictures/header-image.jpeg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
 }
 
-.heading{
-    background-color: #2e2e2e;
-    display: flex;
-    justify-content: center;
-    align-items: left;
+/* Style for menu icon to align it to the left side */
+.menu-icon {
+  font-size: 28px;
+  font-weight: bold;
+  color: #181818;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+
+/* Adjusting header text alignment and padding */
+.heading {
+  background-color: rgba(241, 241, 241, 0.8);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 30px;
 }
 
 .header h1 {
-    font-size: 18px;
-    color: #fb6f92;
-    margin-bottom: 10px;
+  font-size: 20px;
+  color: #fb6f92;
+  margin-bottom: 5px;
+  font-weight: bold;
+  align-items: left;
 }
 
 .header h2 {
-    font-size: 24px;
-    font-weight: 900px;
-    color: #ff414d;
-    margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 900;
+  color: #ff414d;
+  margin-bottom: 15px;
 }
 
-.description {
-    font-size: 14px;
-    color: #333;
-    margin-bottom: 10px;
+/* Style for the second heading */
+.second-heading {
+  font-size: 16px;
+  color: #2e2e2e;
+  padding: 10px;
+  background-color: rgba(241, 241, 241, 0.8);
+  border-radius: 5px;
+  margin: 15px 0;
 }
 
+.third-heading{
+  font-weight: bolder;
+}
+
+/* Date and location styling for consistent font size and spacing */
 .date, .location {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 10px;
+  font-size: 16px;
+  color: #2b2b2b;
+  margin-top: 5px;
+  padding: 5px;
+  background-color: rgba(241, 241, 241, 0.8);
+  border-radius: 5px;
 }
 
-.menu-icon {
-    font-size: 24px;
-    float: left;
-    font-weight: bolder;
-    margin-right: 20px;
-}
 
 /* Main Program */
 .main-program {
@@ -95,7 +119,6 @@ body {
     font-weight: lighter;
 }
 
-
 .program-text p {
     color: #bfbfbf;
     font-size: 14px;
@@ -130,7 +153,6 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #404040;
     padding: 10px;
     border-radius: 8px;
     gap: 10px;
@@ -150,7 +172,7 @@ body {
 }
 
 .speaker-info p {
-    color: #bfbfbf;
+    color: #4e4e4e;
     font-size: 14px;
     margin: 0;
     overflow: hidden;
@@ -162,11 +184,24 @@ body {
     overflow: hidden; 
 }
 
+.more{
+  background-color: #f5f5f5;
+  height: 100px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
 
-/* .speaker-info p {
-    color: #bfbfbf;
-    font-size: 14px;
-} */
+.more-btn{
+  background-color: #ff414d;
+  border: none;
+  color: #fff;
+  padding: 10px 40px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
 footer {
     background-color: #333;
